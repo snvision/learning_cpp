@@ -20,7 +20,7 @@ double calcBallHeight(const double towerHeight, double fallTimeInSec) {
 }
 
 //Печать текущей высоты мяча
-void PrintCurrentHeight(double currentBallHeight, double fallTimeInSec) {
+void printCurrentHeight(double currentBallHeight, double fallTimeInSec) {
   if (currentBallHeight > 0.0) {
     std::cout << "At " << fallTimeInSec << " seconds, the ball is at height: " << currentBallHeight << " meters\n";
   }
@@ -31,7 +31,7 @@ void PrintCurrentHeight(double currentBallHeight, double fallTimeInSec) {
 
 //Вычисление и печать текущей высоты мяча
 void calcAndPrintCurrentBallHeight(double towerHeight, double fallTimeInSec) {
-  PrintCurrentHeight(calcBallHeight(towerHeight, fallTimeInSec), fallTimeInSec);
+  printCurrentHeight(calcBallHeight(towerHeight, fallTimeInSec), fallTimeInSec);
 }
 
 
