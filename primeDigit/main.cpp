@@ -30,16 +30,7 @@ bool isEqual(std::uint16_t digit) {
 
 // Печать результата
 void printResult(bool result) {
-  if (result) {
-    std::cout << "The digit is prime\n";
-  } else {
-    std::cout << "The digit is not prime\n";
-  }
-}
-
-// Проверка чётности/нечётности и печать результата
-void isEqualPrintResult(bool result) {
-  printResult(result);
+  std::cout << "The digit is " << (result ? "prime" : "not prime") << '\n';
 }
 
 
@@ -47,7 +38,7 @@ int main() {
   std::uint16_t digit  = readDigit();
   bool          result = isEqual(digit);
 
-  isEqualPrintResult(result);
+  printResult(result);
 
   return 0;
 }
