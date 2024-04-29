@@ -55,6 +55,8 @@
 - [x] 36. Типы данных с плавающей точкой: float, double
 и long double
 - [x] 37. Логический тип данных bool
+- [Проверка на ввод простого целого числа меньше 10](https://github.com/snvision/learning_cpp/tree/master/primeDigit)
+<br></br>
 - [x] 38. Символьный тип данных char
 - [x] 39. Литералы и магические числа
 - [x] 40. const, constexpr и символьные константы
