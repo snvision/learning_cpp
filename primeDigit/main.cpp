@@ -1,6 +1,7 @@
 #include <iostream>
 
 
+// Ввод числа с клавиатуры
 std::uint16_t readDigit() {
   std::cout << "Enter a positive integer digit less than 10: ";
   std::uint16_t digit;
@@ -9,7 +10,7 @@ std::uint16_t readDigit() {
   return digit;
 }
 
-//Проверка на ввод цифры 2, 3, 5 или 7
+// Проверка на ввод цифры 2, 3, 5 или 7
 bool isEqual(std::uint16_t digit) {
   if (digit == 2) {
     return true;
@@ -27,7 +28,7 @@ bool isEqual(std::uint16_t digit) {
   return false;
 }
 
-//Печать результата
+// Печать результата
 void printResult(bool result) {
   if (result) {
     std::cout << "The digit is prime\n";
@@ -36,6 +37,7 @@ void printResult(bool result) {
   }
 }
 
+// Проверка чётности/нечётности и печать результата
 void isEqualPrintResult(bool result) {
   printResult(result);
 }
