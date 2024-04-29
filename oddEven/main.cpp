@@ -1,6 +1,6 @@
 #include <iostream>
 
-//Считывание числа с клавиатуры
+// Считывание числа с клавиатуры
 int readNumber() {
   std::cout << "Enter integer number: ";
   std::int16_t number;
@@ -9,23 +9,30 @@ int readNumber() {
   return number;
 }
 
-//Определение чётности или нечётности числа
+// Определение чётности или нечётности числа
 bool isEven(int number) {
-  if (number % 2 == 0) {
-    std::cout << number << " is even\n";
+  return (number % 2) == 0;
+}
 
-    return true;
+// Печать результата
+void printIsEven(bool result) {
+  if (result) {
+    std::cout << "Number is even";
   } else {
-    std::cout << number << " is odd\n";
-
-    return false;
+    std::cout << "Number is odd";
   }
 }
 
-int main() {
-  int number = readNumber();
+// Подсчёт и печать резуультата
+void calcAndPrintIsEven(bool result) {
+  printIsEven(result);
+}
 
-  isEven(number);
+int main() {
+  std::int16_t number = readNumber();
+  bool         result = isEven(number);
+
+  calcAndPrintIsEven(result);
 
   return 0;
 }
