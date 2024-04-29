@@ -59,6 +59,7 @@
 - [x] 39. Литералы и магические числа
 - [x] 40. const, constexpr и символьные константы
 - [x] Глава №2. Итоговый тест
+- [Простой калькулятор](https://github.com/snvision/learning_cpp/tree/master/simpleCalculator)
 - [Вычисление высоты мячика после x секунд падения](https://github.com/snvision/learning_cpp/tree/master/theBallfromTheTower)
 <br></br>
 - [x] 41. Приоритет операций и правила ассоциативности
