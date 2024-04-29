@@ -16,23 +16,14 @@ bool isEven(int number) {
 
 // Печать результата
 void printIsEven(bool result) {
-  if (result) {
-    std::cout << "Number is even";
-  } else {
-    std::cout << "Number is odd";
-  }
-}
-
-// Подсчёт и печать резуультата
-void calcAndPrintIsEven(bool result) {
-  printIsEven(result);
+  std::cout << "Number is " << (result ? "even" : "odd") << '\n';
 }
 
 int main() {
   std::int16_t number = readNumber();
   bool         result = isEven(number);
 
-  calcAndPrintIsEven(result);
+  printIsEven(result);
 
   return 0;
 }
