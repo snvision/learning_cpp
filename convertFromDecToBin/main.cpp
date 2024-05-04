@@ -11,17 +11,17 @@ std::uint16_t readNumber() {
   return number;
 }
 
-// Вычисление разницы между введёным числом и степенью числа 2
+// Вычисление разницы между введёным числом и 2 в степени n
 std::uint16_t diffNumber(std::uint16_t number, std::uint16_t degree) {
   return number >= degree ? (number - degree) : number;
 }
 
-// Печать 1 или 0 в зависмости от сравнения введённого числа со степенью числа 2
+// Печать 1 или 0 в зависмости от сравнения введённого числа и 2 в степени n
 void printBitNumber(std::uint16_t number, std::uint16_t degree) {
   std::cout << (number >= degree ? '1' : '0');
 }
 
-// Проверяем условие: введённое число >= 2 в степени n. Если условие истинно — бит равен 1 и вычитаем разницу между числом и степенью числа 2.
+// Проверяем условие: введённое число >= 2 в степени n. Если условие истинно — бит равен 1 и вычитаем разницу между числом и 2 в степени n.
 // Если ложно — бит равен 0 и возвращаем само число.
 std::uint16_t convertDecNumberToBin(std::uint16_t number, std::uint16_t degree) {
   printBitNumber(number, degree);
