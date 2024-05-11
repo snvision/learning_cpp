@@ -2,26 +2,31 @@
 #include <iostream>
 
 
+std::uint16_t readNumber() {
+  std::uint16_t number;
+  std::cin >> number;
+
+  return number;
+}
+
 int main() {
-  std::uint16_t firstNumber;//Создаём firstNumber
   std::cout << "Введите первое число: ";
-  std::cin >> firstNumber;
+  std::uint16_t lessNum = readNumber();
 
-  std::uint16_t secondNumber;//создаём secondNumber
-  std::cout << "Введите второе число, больше чем первое: ";
-  std::cin >> secondNumber;
+  std::cout << "Введите второе число: ";
+  std::uint16_t moreNum = readNumber();
 
-  // Проверка условия для вывода чисел в порядке от меншьшего к большему
-  if (firstNumber > secondNumber) {
+  // Большего и меньшего числа для вывода в порядке возрастания
+  if (lessNum > moreNum) {
     std::cout << "Меняем местами\n";
-    std::uint16_t moreNumber;//Создаём moreNumber
-    moreNumber   = firstNumber;
-    firstNumber  = secondNumber;
-    secondNumber = moreNumber;
-  }// Уничтожаем moreNumber
+    std::uint16_t tmp;//Создаём tmp
+    tmp          = lessNum;
+    lessNum  = tmp;
+    moreNum = tmp;
+  }// Уничтожаем tmp
 
-  std::cout << "Меньшее число: " << firstNumber << '\n';
-  std::cout << "Большее число: " << secondNumber << '\n';
+  std::cout << "Меньшее число: " << lessNum << '\n';
+  std::cout << "Большее число: " << moreNum << '\n';
 
   return 0;
 }// Уничтожаем firstNumber и secondNumber
