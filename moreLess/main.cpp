@@ -21,22 +21,19 @@ std::uint16_t readSecondNumber() {
 }
 
 // Меняем местами первое и второе число
-std::uint16_t switchFirstNumbers(std::uint16_t firstNumber, std::uint16_t secondNumber) {
-  std::uint16_t switchFirstNumber = secondNumber;
+void calcResult(std::uint16_t firstNumber, std::uint16_t secondNumber) {
+  std::uint16_t moreNumber;
+  if (firstNumber > secondNumber) {
+  std::cout << "Меняем местами\n";
+  moreNumber   = firstNumber;
+  firstNumber  = secondNumber;
+  secondNumber = moreNumber;
+  }
 
-  return switchFirstNumber;
-}
-
-std::uint16_t checkMoreLess(std::uint16_t firstNumber, std::uint16_t secondNumber) {
-  return firstNumber >= secondNumber ? switchFirstNumbers(firstNumber, secondNumber) : firstNumber;
-}
-
-void printMoreLess(std::uint16_t firstNumber, std::uint16_t secondNumber) {
-  checkMoreLess(firstNumber, secondNumber);
-
-  std::cout << "Большее число: " << firstNumber << '\n';
+  std::cout << "Меньшее число: " << firstNumber << '\n';
   std::cout << "Меньшее число: " << secondNumber << '\n';
 }
+
 
 int main() {
   setlocale(LC_ALL, "rus");
@@ -44,7 +41,7 @@ int main() {
   std::uint16_t firstNumber  = readFirstNumber();
   std::uint16_t secondNumber = readSecondNumber();
 
-  printMoreLess(firstNumber, secondNumber);
+  calcResult(firstNumber, secondNumber);
 
   return 0;
 }
