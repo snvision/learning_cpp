@@ -20,18 +20,6 @@ double readYourAge() {
 }
 
 
-// Вычисление длины строки с именем и фамилией
-double calcFullNameLength(std::string fullName) {
-  return fullName.length();
-}
-
-
-// Посчёт времени жизни за каждую букву введённых имени и фамилии
-double calcLivedYears(double yourAge, double fullNameLength) {
-  return yourAge / fullNameLength;
-}
-
-
 // Печать числа прожитых лет
 void printLivedYears(double livedYears) {
   std::cout << "You've lived " << livedYears << " years for each letter in your name." << '\n';
@@ -39,10 +27,9 @@ void printLivedYears(double livedYears) {
 
 
 int main() {
-  std::string fullName       = readFullName();
-  double      yourAge        = readYourAge();
-  double      fullNameLength = calcFullNameLength(fullName);
-  double      livedYears     = calcLivedYears(yourAge, fullNameLength);
+  const std::string fullName   = readFullName();
+  const double      yourAge    = readYourAge();
+  const double      livedYears = yourAge / fullName.length();
 
   printLivedYears(livedYears);
 
