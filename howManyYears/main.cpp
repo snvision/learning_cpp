@@ -39,9 +39,9 @@ void printLivedYears(double yourAge, double fullNameLength) {
 
 
 int main() {
-  std::string fullName = readFullName();
-  double yourAge = readYourAge();
-  double fullNameLength = calcFullNameLength(fullName);
+  std::string fullName       = readFullName();
+  double      yourAge        = readYourAge();
+  double      fullNameLength = calcFullNameLength(fullName);
 
   printLivedYears(yourAge, fullNameLength);
 
