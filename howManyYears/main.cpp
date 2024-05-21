@@ -19,6 +19,7 @@ double readYourAge() {
   return yourAge;
 }
 
+
 // Вычисление длины строки с именем и фамилией
 double calcFullNameLength(std::string fullName) {
   return fullName.length();
