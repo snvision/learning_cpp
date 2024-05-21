@@ -33,8 +33,7 @@ double calcLivedYears(double yourAge, double fullNameLength) {
 
 
 // Печать числа прожитых лет
-void printLivedYears(double yourAge, double fullNameLength) {
-  double livedYears = calcLivedYears(yourAge, fullNameLength);
+void printLivedYears(double livedYears) {
   std::cout << "You've lived " << livedYears << " years for each letter in your name." << '\n';
 }
 
@@ -43,8 +42,9 @@ int main() {
   std::string fullName       = readFullName();
   double      yourAge        = readYourAge();
   double      fullNameLength = calcFullNameLength(fullName);
+  double      livedYears     = calcLivedYears(yourAge, fullNameLength);
 
-  printLivedYears(yourAge, fullNameLength);
+  printLivedYears(livedYears);
 
   return 0;
 }
