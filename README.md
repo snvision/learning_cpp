@@ -96,10 +96,12 @@
 - [x] 60. Введение в std::string
 - [Cколько лет прожил человек на каждую букву из его имени и фамилии](https://github.com/snvision/learning_cpp/tree/master/howManyYears)
 <br></br>
-- [ ] 61. Перечисления
-- [ ] 62. Классы enum
-- [ ] 63. Псевдонимы типов: typedef и type alias
-- [ ] 64. Структуры
+- [x] 61. Перечисления
+- [x] 62. Классы enum
+- [x] 63. Псевдонимы типов: typedef и type alias
+- [x] 64. Структуры
+- [Подсчёт доходов от рекламы на сайте за день](https://github.com/snvision/learning_cpp/tree/master/advertisingCost)
+<br></br>
 - [ ] 65. Вывод типов: ключевое слово auto
 - [ ] Глава №4. Итоговый тест
 - [ ] 66. Операторы управления потоком выполнения
