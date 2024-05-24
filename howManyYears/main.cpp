@@ -22,7 +22,7 @@ double readYourAge() {
 
 // Печать числа прожитых лет
 void printLivedYears(double livedYears) {
-  std::cout << "You've lived " << livedYears << " years for each letter in your name." << '\n';
+  std::cout << "You've lived " << livedYears << " years for each letter in your name.\n";
 }
 
 
