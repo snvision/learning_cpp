@@ -17,7 +17,7 @@
 инициализаторов, и передайте в функцию printMonster().
 
 Пример результата выполнения вашей программы:
-```cpp
+```
 This Goblin is named John and has 170 health.
 This Orc is named James and has 35 health.
 ```
