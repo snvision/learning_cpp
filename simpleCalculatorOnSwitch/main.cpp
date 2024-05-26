@@ -53,7 +53,6 @@ int main() {
 
   std::cout << firstNumber << ' ' << mathOperator << ' ' << secondNumber << " = ";
   calculate(firstNumber, secondNumber, mathOperator);
-  std::cout << '\n';
 
   return 0;
 }
