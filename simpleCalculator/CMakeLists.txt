@@ -1,4 +1,4 @@
-project(simpleCalculator LANGUAGES CXX)
+project(simpleCalculatorOnSwitch LANGUAGES CXX)
 
 add_executable(${PROJECT_NAME}
   main.cpp
