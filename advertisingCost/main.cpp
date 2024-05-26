@@ -13,14 +13,13 @@ struct Advertising {
 // Печать результатов рекламной компании
 void printAdvResult(Advertising advertising) {
   std::cout << "How many ads have you shown to visitors: "
-            << advertising.numberOfAds << '\n';
-  std::cout << "How many percent of visitors clicked on the ads: "
-            << advertising.PercentageOfClicks << '\n';
-  std::cout << "How much did you earn on average for each click on the ads: "
-            << advertising.earningsPerClick << '\n';
-
-  std::cout << "You have earned money in a day: "
-            << advertising.numberOfAds * advertising.PercentageOfClicks * advertising.earningsPerClick << '\n';
+            << advertising.numberOfAds << '\n'
+            << "How many percent of visitors clicked on the ads: "
+            << advertising.PercentageOfClicks << '\n'
+            << "How much did you earn on average for each click on the ads: "
+            << advertising.earningsPerClick << '\n'
+            << "You have earned money in a day: "
+            << (advertising.numberOfAds * advertising.PercentageOfClicks * advertising.earningsPerClick) << '\n';
 }
 
 
