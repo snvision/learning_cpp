@@ -1,20 +1,20 @@
+#include <cassert>
 #include <cstdint>
 #include <iostream>
 #include <string>
 
-
 // Типы монстров
 enum class MonsterType {
-  OGRE,
-  GOBLIN,
-  SKELETON,
-  ORC,
-  ROLL,
+  ogre,
+  goblin,
+  skeleton,
+  orc,
+  roll,
 };
 
 
 // Параметры монстров
-struct MonsterParameters {
+struct Monster {
   MonsterType   type;
   std::string   name;
   std::uint16_t health;
@@ -22,28 +22,29 @@ struct MonsterParameters {
 
 
 // Печать имени монстра
-std::string printMonsterType(MonsterParameters monster) {
-  if (monster.type == MonsterType::OGRE) {
+std::string printMonsterType(Monster monster) {
+  if (monster.type == MonsterType::ogre) {
     return "Ogre";
   }
-  if (monster.type == MonsterType::GOBLIN) {
+  if (monster.type == MonsterType::goblin) {
     return "Goblin";
   }
-  if (monster.type == MonsterType::SKELETON) {
+  if (monster.type == MonsterType::skeleton) {
     return "Skeleton";
   }
-  if (monster.type == MonsterType::ORC) {
+  if (monster.type == MonsterType::orc) {
     return "Orc";
   }
-  if (monster.type == MonsterType::ROLL) {
+  if (monster.type == MonsterType::roll) {
     return "Roll";
   }
+  assert(false);
   return "No Name";
 }
 
 
 // Печать информации о монстре
-void printMonsterInformation(MonsterParameters monster) {
+void printMonsterInformation(Monster monster) {
   std::cout << "This " << printMonsterType(monster)
             << " is named " << monster.name
             << " and has " << monster.health << " health.\n";
@@ -51,8 +52,8 @@ void printMonsterInformation(MonsterParameters monster) {
 
 
 int main() {
-  MonsterParameters goblin = {MonsterType::GOBLIN, "Nikita", 170};
-  MonsterParameters orc    = {MonsterType::ORC, "Dima", 228};
+  const Monster goblin = {MonsterType::goblin, "Nikita", 170};
+  const Monster orc    = {MonsterType::orc, "Dima", 228};
 
   printMonsterInformation(goblin);
   printMonsterInformation(orc);
