@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 
+
 // Типы монстров
 enum class MonsterType {
   ogre,
