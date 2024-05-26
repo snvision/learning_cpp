@@ -23,28 +23,22 @@ char readOperator() {
 void calculate(std::int64_t firstNumber, std::int64_t secondNumber, char mathOperator) {
   switch (mathOperator) {
     case '+':
-      std::cout << firstNumber << " + " << secondNumber
-                << " = " << firstNumber + secondNumber << '\n';
+      std::cout << firstNumber + secondNumber;
       break;
     case '-':
-      std::cout << firstNumber << " - " << secondNumber
-                << " = " << firstNumber - secondNumber << '\n';
+      std::cout << firstNumber - secondNumber;
       break;
     case '*':
-      std::cout << firstNumber << " * " << secondNumber
-                << " = " << firstNumber * secondNumber << '\n';
+      std::cout << firstNumber * secondNumber;
       break;
     case '/':
-      std::cout << firstNumber << " / " << secondNumber
-                << " = " << firstNumber / secondNumber << '\n';
+      std::cout << firstNumber / secondNumber;
       break;
     case '%':
-      std::cout << firstNumber << " % " << secondNumber
-                << " = " << firstNumber % secondNumber << '\n';
+      std::cout << firstNumber % secondNumber;
       break;
     default:
       std::cout << "Unknown operator\n";
-      break;
   }
 }
 
@@ -56,7 +50,9 @@ int main() {
   const std::int64_t secondNumber = readNumber();
   const char         mathOperator = readOperator();
 
+  std::cout << firstNumber << ' ' << mathOperator << ' ' << secondNumber << " = ";
   calculate(firstNumber, secondNumber, mathOperator);
+  std::cout << '\n';
 
   return 0;
 }
