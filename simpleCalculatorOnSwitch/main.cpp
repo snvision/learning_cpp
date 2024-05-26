@@ -39,6 +39,7 @@ void calculate(std::int64_t firstNumber, std::int64_t secondNumber, char mathOpe
       break;
     default:
       std::cout << "Unknown operator\n";
+      break;
   }
 }
 
