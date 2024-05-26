@@ -21,8 +21,8 @@ struct Monster {
 };
 
 
-// Печать имени монстра
-std::string printMonsterType(Monster monster) {
+// Получение имени монстра
+std::string getMonsterTypeString(Monster monster) {
   if (monster.type == MonsterType::ogre) {
     return "Ogre";
   }
@@ -45,7 +45,7 @@ std::string printMonsterType(Monster monster) {
 
 // Печать информации о монстре
 void printMonsterInformation(Monster monster) {
-  std::cout << "This " << printMonsterType(monster)
+  std::cout << "This " << getMonsterTypeString(monster)
             << " is named " << monster.name
             << " and has " << monster.health << " health.\n";
 }
