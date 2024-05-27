@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 
+
 // Виды животных
 enum class Animal {
   pig,
@@ -12,6 +13,7 @@ enum class Animal {
 };
 
 
+// Получение имени животного в зависимости от значения перечислителя
 std::string getAnimalName(Animal animal) {
   switch (animal) {
     case Animal::pig:
@@ -34,12 +36,40 @@ std::string getAnimalName(Animal animal) {
       break;
     default:
       return "Unknown animal";
+      break;
   }
 }
 
 
-int main() {
+// Получение количества ног животного
+std::string getNumberOfLegs(Animal animal) {
+  switch (animal) {
+    case Animal::pig:
+    case Animal::goat:
+    case Animal::cat:
+    case Animal::dog:
+      return " 4 ";
+      break;
+    case Animal::chicken:
+    case Animal::ostrich:
+      return " 2 ";
+      break;
+    default:
+      return " has unknown number of legs";
+      break;
+  }
+}
 
+
+// Печать имени животного и количества его ног
+void printNumberOfLegs (Animal animal) {
+  std::cout << "A " << getAnimalName(animal) << " has" << getNumberOfLegs(animal) << "legs.\n";
+}
+
+
+int main() {
+  printNumberOfLegs(Animal::cat);
+  printNumberOfLegs(Animal::chicken);
 
   return 0;
 }
