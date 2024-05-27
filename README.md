@@ -112,7 +112,7 @@
 - [x] 68. Оператор switch
 - [Простой калькулятор через оператор switch](https://github.com/snvision/learning_cpp/tree/master/simpleCalculatorOnSwitch)
 <br></br>
-- [Печать количества ног животного в зависимости от значения пречислителя](-)
+- [Печать количества ног животного в зависимости от значения пречислителя](https://github.com/snvision/learning_cpp/tree/master/animalLegs)
 <br></br>
 - [ ] 69. Оператор goto
 - [ ] 70. Цикл while
