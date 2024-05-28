@@ -1,3 +1,4 @@
+#include <cassert>
 #include <iostream>
 #include <string>
 
@@ -35,6 +36,7 @@ std::string getAnimalName(Animal animal) {
       return "ostrich";
       break;
     default:
+      assert(false);
       return "Unknown animal";
       break;
   }
@@ -55,6 +57,7 @@ std::string getNumberOfLegs(Animal animal) {
       return " 2 ";
       break;
     default:
+      assert(false);
       return " has unknown number of legs";
       break;
   }
@@ -62,7 +65,7 @@ std::string getNumberOfLegs(Animal animal) {
 
 
 // Печать имени животного и количества его ног
-void printNumberOfLegs (Animal animal) {
+void printNumberOfLegs(Animal animal) {
   std::cout << "A " << getAnimalName(animal) << " has" << getNumberOfLegs(animal) << "legs.\n";
 }
 
