@@ -1,6 +1,7 @@
 #include <iostream>
 
 
+//Печать букв английского алфавита
 void printAlphabet() {
   char count = 'a';
   while (count <= 'z') {
