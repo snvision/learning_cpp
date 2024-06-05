@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-// Печать пирамиды из цифр
+// Печать лестницы из цифр
 void printLadderOfNumbers() {
   std::int16_t outer = 5;
   while (outer >= 1) {
