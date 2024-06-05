@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-//Печать букв английского алфавита
+//Печать букв английского алфавита и их ASCII-кодов
 void printAlphabet() {
   char count = 'a';
   while (count <= 'z') {
