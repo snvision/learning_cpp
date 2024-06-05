@@ -2,8 +2,8 @@
 #include <iostream>
 
 
-//Построение пирамиды из цифр
-void printPiramidOfNumbers() {
+// Печать пирамиды из цифр
+void printLadderOfNumbers() {
   std::int16_t outer = 5;
   while (outer >= 1) {
     std::int16_t inner = outer;
@@ -17,6 +17,6 @@ void printPiramidOfNumbers() {
 
 
 int main() {
-  printPiramidOfNumbers();
+  printLadderOfNumbers();
   return 0;
 }
