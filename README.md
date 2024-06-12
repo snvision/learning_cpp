@@ -113,10 +113,13 @@
 - [Простой калькулятор через оператор switch](https://github.com/snvision/learning_cpp/tree/master/simpleCalculatorOnSwitch)
 - [Печать количества ног животного в зависимости от значения пречислителя](https://github.com/snvision/learning_cpp/tree/master/animalLegs)
 <br></br>
-- [ ] 69. Оператор goto
-- [ ] 70. Цикл while
-- [ ] 71. Цикл do while
-- [ ] 72. Цикл for
+- [x] 69. Оператор goto
+- [x] 70. Цикл while
+- [x] 71. Цикл do while
+- [x] 72. Цикл for
+- [Печать чётных чисел от 0 до 20](https://github.com/snvision/learning_cpp/tree/master/evenNumFrom0to20)
+- [Сумма чисел от 1 до значения value](https://github.com/snvision/learning_cpp/tree/master/sumTo)
+<br></br>
 - [ ] 73. Операторы break и continue
 - [ ] 74. Генерация случайных чисел
 - [ ] 75. Обработка некорректного пользовательского
