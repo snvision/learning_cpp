@@ -28,8 +28,8 @@ void printSumTo(std::int16_t sumValue) {
 
 
 int main() {
-  std::int16_t value    = readValue();
-  std::int16_t sumValue = sumTo(value);
+  const std::int16_t value    = readValue();
+  const std::int16_t sumValue = sumTo(value);
   printSumTo(sumValue);
 
   return 0;
