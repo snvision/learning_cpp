@@ -1,4 +1,4 @@
-project(theBallfromTheTowerV2.0 LANGUAGES CXX)
+project(theBallfromTheTower LANGUAGES CXX)
 
 add_executable(${PROJECT_NAME}
     main.cpp
