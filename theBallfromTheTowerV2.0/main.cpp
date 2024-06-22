@@ -11,6 +11,7 @@ double readTowerHeight() {
   return towerHeight;
 }
 
+
 //Вычисление текущей высоты мяча
 double calcBallHeight(const double towerHeight, double fallTimeInSec) {
   double ballHeight        = (myConstants::gravity * fallTimeInSec * fallTimeInSec) / 2;
@@ -18,6 +19,7 @@ double calcBallHeight(const double towerHeight, double fallTimeInSec) {
 
   return currentBallHeight;
 }
+
 
 //Печать текущей высоты мяча
 void printCurrentHeight(double currentBallHeight, double fallTimeInSec) {
@@ -29,10 +31,11 @@ void printCurrentHeight(double currentBallHeight, double fallTimeInSec) {
 //Вычисление и печать текущей высоты мяча
 void calcAndPrintCurrentBallHeight(double towerHeight, double fallTimeInSec) {
   // Пока текущая высота мяча больше или равна высоте земли, печчать текущей высоты мяча
-  while (calcBallHeight(towerHeight, fallTimeInSec) >= myConstants::groundLevel) {
+  while (calcBallHeight(towerHeight, fallTimeInSec) > myConstants::groundLevel) {
     printCurrentHeight(calcBallHeight(towerHeight, fallTimeInSec), fallTimeInSec);
     ++fallTimeInSec;
   }
+  // Есди текущая высота стала меньше или равна нулю, печать сообщения
   if (calcBallHeight(towerHeight, fallTimeInSec) <= myConstants::groundLevel) {
     std::cout << "At " << fallTimeInSec << " seconds the ball is on ground\n";
   }
