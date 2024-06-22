@@ -21,9 +21,8 @@ double calcBallHeight(const double towerHeight, double fallTimeInSec) {
 
 //Печать текущей высоты мяча
 void printCurrentHeight(double currentBallHeight, double fallTimeInSec) {
-  if (currentBallHeight)
-    std::cout << "At " << fallTimeInSec << " seconds, the ball is at height: "
-              << currentBallHeight << " meters\n";
+  std::cout << "At " << fallTimeInSec << " seconds, the ball is at height: "
+            << currentBallHeight << " meters\n";
 }
 
 
